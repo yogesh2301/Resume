@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Baloo Bhai', cursive; */
+}
+
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: rgb(235, 232, 232);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+    
+}
+
+.container .left_side{
+    position: relative;
+    background: rgb(6, 2, 26);
+    padding: 40px;
+    
+}
+
+.profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(117, 110, 124, 0.2);
+}
+
+.profile .imgme{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile .imgme img{
+    position: absolute;
+    top: -11px;
+    left: -9px;
+    width: 111%;
+    height: 114%;
+    
+}
+
+.profile h2{
+    color: aliceblue;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 600;
+    line-height:1.4em;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.profile h2 span{
+    font-size: 0.7em;
+    font-weight: 200;
+}
+
+.contactInfo{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(117, 110, 124, 0.2);
+}
+
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul{
+    position: relative;
+}
+
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contactInfo ul li span{
+    color: #fff;
+    font-family: 'Baloo Bhai', cursive;
+    font-weight: 200; 
+    font-size: 14px;   
+}
+
+.contactInfo.Extra li{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 14px;   
+    margin-bottom: 15px;
+    color: antiquewhite;
+    list-style: circle;
+}
+
+.container .right_side{
+    position: relative;
+    background: rgb(238, 236, 240);
+    padding: 40px; 
+}
+
+.about{
+    margin-bottom: 50px;
+}
+
+.about:last-child{
+    margin-bottom: 0; 
+}
+
+.title2{
+    font-weight: 600;
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+p{
+    color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.resume_data{
+    display: flex;
+}
+
+.resume_data .year{
+    padding-right: 26px;
+	width: 115px;
+	position: relative;
+    font-size: 17px;
+    color: #46494e;
+    font-weight: 600;
+}
+
+.resume_data .content{
+	padding-left: 35px;
+	margin-bottom: 20px;
+	width: calc(100% - 115px);
+}
+
+.resume_data .content h3{
+    color: #003147;
+}
+.resume_data .content p{
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.resume_data .year:before{
+    content: "";
+	position: absolute;
+	top: 5px;
+	right: 0;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border: 1px solid #26252d;
+	border-radius: 50%;
+}
+
+.resume_data .year:after{
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 4px;
+    width: 3px;
+    height: 90%;
+    background: #0175b2;
+}
+
+.resume_data:last-child .year:after{
+    display: none;
+}
+.skills .box{
+    margin: 15px;
+    min-width: 150px;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .box h4{
+    /* text-transform: uppercase; */
+    color: #46494e;
+    font-weight: 600;
+}
+.skills .box .percent{
+    position: relative;
+    width: 95%;
+    height: 10px;
+    background: #8d939c;
+}
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+.about.certificates li{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 15px;   
+    margin-bottom: 15px;
+    color: rgb(59, 52, 52);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: square; 
+    font-weight: bold;
+    margin-left: 25px;
+    padding-left: 10px;
+}
+
+@media(max-width : 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
